@@ -40,6 +40,24 @@
             height: 100%;
             border-right: 4px solid black;
             flex-shrink: 0;
+            display: flex; /* Damit wir das Bild perfekt zentrieren können */
+            justify-content: center;
+            align-items: center;
+            text-decoration: none; /* Verhindert Rahmen um den Link */
+            overflow: hidden; /* Verhindert, dass ein zu großes Bild übersteht */
+            background-color: white; /* Hintergrundfarbe hinter dem Logo */
+            transition: transform 0.2s; /* Optionaler Hover-Effekt */
+        }
+
+        .logo-img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain; /* 'contain' zeigt das ganze Bild. Nutze 'cover', wenn es das Feld randlos ausfüllen soll */
+            padding: 5px; /* Ein kleiner Abstand zum Rand, damit es schöner aussieht. Bei randlosem Design einfach löschen. */
+        }
+
+        .logo-img:hover {
+            transform: scale(1.05); /* Das Logo wird beim Drüberfahren minimal größer */
         }
 
         .nav-links {
@@ -48,7 +66,7 @@
             height: 100%;
         }
 
-        .nav-link, .nav-link2, .nav-link3, .nav-link4, .nav-link5 {
+        .nav-link, .nav-link_box, .nav-link_mat, .nav-link_wosh, .nav-link_proj, .nav-link5 {
             flex: 1;
             display: flex;
             align-items: center;     
@@ -63,11 +81,16 @@
             height: 100%; 
         }
 
+        .nav-link_box {
+            background-color: #f3cbe1;
+
+        }
+
         .nav-links a:last-child { border-right: none; }
-        .nav-link:hover { background-color: #f3cbe1; color: #000; }
-        .nav-link2:hover { background-color: #3aaf71; color: #000; }
-        .nav-link3:hover { background-color: #6b85c3; color: #000; }
-        .nav-link4:hover { background-color: #edce76; color: #000; }
+        .nav-link_box:hover { background-color: #f3cbe1; color: #000; }
+        .nav-link_mat:hover { background-color: #3aaf71; color: #000; }
+        .nav-link_wosh:hover { background-color: #6b85c3; color: #000; }
+        .nav-link_proj:hover { background-color: #edce76; color: #000; }
         .nav-link5:hover { background-color: #278807; color: #000; }
 
         /* --- Burger Menü Icon --- */
@@ -106,7 +129,7 @@
                 height: auto; 
             }
             .nav-links.active { display: flex; }
-            .nav-link, .nav-link2, .nav-link3, .nav-link4, .nav-link5 {
+            .nav-link, .nav_link_mat, .nav-link3, .nav-link4, .nav-link5 {
                 border-right: none;
                 border-bottom: 2px solid black;
                 width: 100%;
@@ -163,13 +186,15 @@
 <body>
 
     <nav class="top-nav">
-        <div class="nav-empty"></div>
+        <a href="box.html" class="nav-empty">
+        <img src="static/logo.png" alt="Startseite" class="logo-img">
+        </a>
         
          <div class="nav-links" id="nav-links">
-            <a href="box.html" class="nav-link">Das Konzept</a>
-            <a href="material.html" class="nav-link3">Die Materialien</a>
-            <a href="workshops.html" class="nav-link4">Die Workshops</a>
-            <a href="projekt.html" class="nav-link2">Über das Projekt</a>
+            <a href="box.html" class="nav-link_box">Das Konzept</a>
+            <a href="material.html" class="nav-link_mat">Die Materialien</a>
+            <a href="workshops.html" class="nav-link_wosh">Die Workshops</a>
+            <a href="projekt.html" class="nav-link_proj">Über das Projekt</a>
         </div>
 
         <div class="burger-menu" id="burger-menu">
@@ -203,7 +228,7 @@
 
         // --- 2. Markdown Datei laden und rendern ---
         // WICHTIG: Ersetze 'ordnername/box.md' mit dem tatsächlichen Pfad zu deiner Markdown-Datei
-        const markdownFilePath = 'wissen.md'; 
+        const markdownFilePath = 'box.md'; 
 
         fetch(markdownFilePath)
             .then(response => {

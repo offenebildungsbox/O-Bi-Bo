@@ -1,13 +1,3 @@
-<!DOCTYPE html>
-<html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Offene Bildungsbox - Die Box</title>
-    
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-
-    <style>
         /* Grundlegendes Styling (Identisch zur Startseite) */
         * {
             box-sizing: border-box;
@@ -40,6 +30,24 @@
             height: 100%;
             border-right: 4px solid black;
             flex-shrink: 0;
+            display: flex; /* Damit wir das Bild perfekt zentrieren können */
+            justify-content: center;
+            align-items: center;
+            text-decoration: none; /* Verhindert Rahmen um den Link */
+            overflow: hidden; /* Verhindert, dass ein zu großes Bild übersteht */
+            background-color: white; /* Hintergrundfarbe hinter dem Logo */
+            transition: transform 0.2s; /* Optionaler Hover-Effekt */
+        }
+
+        .logo-img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain; /* 'contain' zeigt das ganze Bild. Nutze 'cover', wenn es das Feld randlos ausfüllen soll */
+            padding: 5px; /* Ein kleiner Abstand zum Rand, damit es schöner aussieht. Bei randlosem Design einfach löschen. */
+        }
+
+        .logo-img:hover {
+            transform: scale(1.05); /* Das Logo wird beim Drüberfahren minimal größer */
         }
 
         .nav-links {
@@ -48,7 +56,7 @@
             height: 100%;
         }
 
-        .nav-link, .nav-link2, .nav-link3, .nav-link4, .nav-link5 {
+        .nav-link, .nav-link_box, .nav-link_mat, .nav-link_wosh, .nav-link_proj, .nav-link5 {
             flex: 1;
             display: flex;
             align-items: center;     
@@ -63,11 +71,12 @@
             height: 100%; 
         }
 
+
         .nav-links a:last-child { border-right: none; }
-        .nav-link:hover { background-color: #f3cbe1; color: #000; }
-        .nav-link2:hover { background-color: #3aaf71; color: #000; }
-        .nav-link3:hover { background-color: #6b85c3; color: #000; }
-        .nav-link4:hover { background-color: #edce76; color: #000; }
+        .nav-link_box:hover { background-color: #f3cbe1; color: #000; }
+        .nav-link_mat:hover { background-color: #3aaf71; color: #000; }
+        .nav-link_wosh:hover { background-color: #6b85c3; color: #000; }
+        .nav-link_proj:hover { background-color: #edce76; color: #000; }
         .nav-link5:hover { background-color: #278807; color: #000; }
 
         /* --- Burger Menü Icon --- */
@@ -106,7 +115,7 @@
                 height: auto; 
             }
             .nav-links.active { display: flex; }
-            .nav-link, .nav-link2, .nav-link3, .nav-link4, .nav-link5 {
+            .nav-link, .nav_link_mat, .nav-link3, .nav-link4, .nav-link5 {
                 border-right: none;
                 border-bottom: 2px solid black;
                 width: 100%;
@@ -157,70 +166,3 @@
             border: 4px solid black; /* Passt optisch zum Rest der Seite */
             margin-bottom: 20px;
         }
-
-    </style>
-</head>
-<body>
-
-    <nav class="top-nav">
-        <div class="nav-empty"></div>
-        
-        <div class="nav-links" id="nav-links">
-            <a href="box.html" class="nav-link">Die Box</a>
-            <a href="wissen.html" class="nav-link2">Wissen</a>
-            <a href="material.html" class="nav-link3">Material</a>
-            <a href="workshops.html" class="nav-link4">Workshops</a>
-            <a href="partner.html" class="nav-link2">Partner</a>
-        </div>
-
-        <div class="burger-menu" id="burger-menu">
-            <div class="line line1"></div>
-            <div class="line line2"></div>
-            <div class="line line3"></div>
-        </div>
-    </nav>
-
-    <div class="main-container">
-        <aside class="sidebar">
-            <div class="sidebar-box"></div>
-            <div class="sidebar-box"></div>
-            <div class="sidebar-box"></div>
-            <div class="sidebar-box"></div>
-        </aside>
-
-        <main class="content-area" id="markdown-content">
-            Lade Inhalte...
-        </main>
-    </div>
-
-    <script>
-        // --- 1. Burger Menü Logik ---
-        const burgerMenu = document.getElementById('burger-menu');
-        const navLinks = document.getElementById('nav-links');
-
-        burgerMenu.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        });
-
-        // --- 2. Markdown Datei laden und rendern ---
-        // WICHTIG: Ersetze 'ordnername/box.md' mit dem tatsächlichen Pfad zu deiner Markdown-Datei
-        const markdownFilePath = 'partner.md'; 
-
-        fetch(markdownFilePath)
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Fehler beim Laden der Markdown-Datei');
-                }
-                return response.text();
-            })
-            .then(text => {
-                // Wandelt das Markdown in HTML um und fügt es in den <main> Container ein
-                document.getElementById('markdown-content').innerHTML = marked.parse(text);
-            })
-            .catch(error => {
-                document.getElementById('markdown-content').innerHTML = '<p>Die Inhalte konnten leider nicht geladen werden.</p>';
-                console.error(error);
-            });
-    </script>
-</body>
-</html>

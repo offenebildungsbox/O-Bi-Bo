@@ -3,151 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Offene Bildungsbox</title>
+    <title>Offene Bildungsbox - Workshops</title>
+    <link rel="stylesheet" href="style.css">
     <style>
-        /* Grundlegendes Styling */
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: 'Comic Sans MS', 'Chalkboard SE', sans-serif;
-        }
+        /* Farbliche Markierung Menü */
+        .nav-link_wosh { background-color: #6b85c3; }
 
-        body {
-            background-color: #ffffff;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-
-        /* --- Menüleiste --- */
-        .top-nav {
-            display: flex;
-            border-bottom: 4px solid black;
-            background-color: white;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            align-items: center;
-            height: 60px; /* Feste Höhe: Identisch mit der Breite der Sidebar */
-        }
-
-        .nav-empty {
-            width: 60px; /* Identisch mit der Breite der Sidebar */
-            height: 100%;
-            border-right: 4px solid black;
-            flex-shrink: 0;
-        }
-
-        /* Container für die Links */
-        .nav-links {
-            display: flex;
-            flex: 1;
-            height: 100%;
-        }
-
-        .nav-link, .nav-link2, .nav-link3, .nav-link4, .nav-link5 {
-            flex: 1;
-            display: flex;
-            align-items: center;     /* Zentriert den Text vertikal */
-            justify-content: center; /* Zentriert den Text horizontal */
-            text-decoration: none;
-            color: black;
-            font-weight: bold;
-            font-size: 1.2rem;
-            border-right: 4px solid black;
-            transition: background-color 0.3s, color 0.3s;
-            min-width: 120px;
-            height: 100%; /* Füllt die komplette Höhe der Headerleiste aus */
-        }
-
-        /* Entfernt den rechten Rand beim letzten Link */
-        .nav-links a:last-child {
-            border-right: none;
-        }
-
-        .nav-link:hover { background-color: #f3cbe1; color: #000; }
-        .nav-link2:hover { background-color: #3aaf71; color: #000; }
-        .nav-link3:hover { background-color: #6b85c3; color: #000; }
-        .nav-link4:hover { background-color: #edce76; color: #000; }
-        .nav-link5:hover { background-color: #278807; color: #000; }
-
-        /* --- Burger Menü Icon --- */
-        .burger-menu {
-            display: none;
-            flex-direction: column;
-            justify-content: space-between;
-            width: 35px;
-            height: 25px;
-            cursor: pointer;
-            margin: 0 20px;
-            margin-left: auto;
-        }
-
-        .burger-menu .line {
-            width: 100%;
-            height: 5px;
-            border-radius: 3px;
-            border: 1px solid black;
-        }
-
-        .burger-menu .line1 { background-color: #f3cbe1; } 
-        .burger-menu .line2 { background-color: #3aaf71; } 
-        .burger-menu .line3 { background-color: #6b85c3; } 
-
-        /* --- Responsive Ansicht (Mobile / Tablets) --- */
-        @media (max-width: 768px) {
-            .nav-links {
-                display: none;
-                flex-direction: column;
-                position: absolute;
-                top: 100%; /* Klappt exakt unter den 60px hohen Header auf */
-                left: 0;
-                width: 100%;
-                background-color: white;
-                border-bottom: 4px solid black;
-                height: auto; /* Hebt die 100% Höhe für die mobile Liste auf */
-            }
-
-            .nav-links.active {
-                display: flex;
-            }
-
-            .nav-link, .nav-link2, .nav-link3, .nav-link4, .nav-link5 {
-                border-right: none;
-                border-bottom: 2px solid black;
-                width: 100%;
-                height: 55px; /* Angenehme Klick-Höhe auf dem Smartphone */
-            }
-
-            .nav-links a:last-child {
-                border-bottom: none;
-            }
-
-            .burger-menu {
-                display: flex;
-            }
-        }
+        /* --- Layout --- */
+        .main-container { display: flex; flex: 1; }
+        .sidebar { width: 60px; border-right: 4px solid black; display: flex; flex-direction: column; flex-shrink: 0; }
+        .sidebar-box { height: 150px; border-bottom: 4px solid black; }
         
-        /* --- Hauptbereich --- */
-        .main-container {
-            display: flex;
-            flex: 1;
-        }
-
-        .sidebar {
-            width: 60px; /* Feste Breite: Identisch mit der Höhe des Headers */
-            border-right: 4px solid black;
-            display: flex;
-            flex-direction: column;
-            flex-shrink: 0;
-        }
-
-        .sidebar-box {
-            height: 150px;
-            border-bottom: 4px solid black;
-        }
-
         .content-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -157,194 +23,91 @@
             align-content: start;
         }
 
-        .grid-item {
-            display: block;
-            text-decoration: none;
-            color: inherit;
-            transition: transform 0.2s;
-        }
+        .grid-item { display: block; text-decoration: none; color: inherit; transition: transform 0.2s; }
+        .grid-item:hover { transform: scale(1.02); }
 
-        .grid-item:hover {
-            transform: scale(1.02);
-        }
-
-        /* --- Die exakte Projektbox --- */
-        .project-box {
-            display: grid;
-            grid-template-columns: 40fr 3fr;
-            grid-template-rows: 30fr 3fr;
-            aspect-ratio: 43 / 33; 
-            border: 4px solid black; 
-            background-color: white;
-        }
-
-        .inner-content {
-            grid-column: 1 / 2;
-            grid-row: 1 / 2;
-            background-color: #d9d9d9;
-            display: flex;
-            justify-content: flex-start;
-            align-items: flex-start;
-            overflow: hidden;
-        }
-
-        .inner-content img {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-            object-position: top left;
-        }
-
-        .border-right {
-            grid-column: 2 / 3;
-            grid-row: 1 / 2;
-            border-left: 4px solid black; 
-            display: flex;
-            flex-direction: column; 
-        }
-
-        .border-right-box {
-            flex: 1; 
-        }
-
-        .border-right-box:not(:last-child) {
-            border-bottom: 4px solid black;
-        }
-
-        .border-bottom {
-            grid-column: 1 / 2;
-            grid-row: 2 / 3;
-            border-top: 4px solid black; 
-            display: flex; 
-        }
-
-        .border-bottom-box {
-            flex: 1; 
-        }
-
-        .border-bottom-box:not(:last-child) {
-            border-right: 4px solid black;
-        }
-
-        .border-corner {
-            grid-column: 2 / 3;
-            grid-row: 2 / 3;
-            background-color: white;
-            border-left: 4px solid black;
-            border-top: 4px solid black;
-        }
-
+        /* Projektbox Styling */
+        .project-box { display: grid; grid-template-columns: 40fr 3fr; grid-template-rows: 30fr 3fr; aspect-ratio: 43 / 33; border: 4px solid black; background-color: white; }
+        .inner-content { grid-column: 1 / 2; grid-row: 1 / 2; background-color: #d9d9d9; display: flex; justify-content: flex-start; align-items: flex-start; overflow: hidden; }
+        .inner-content img { width: 100%; height: 100%; object-fit: contain; object-position: top left; }
+        .border-right { grid-column: 2 / 3; grid-row: 1 / 2; border-left: 4px solid black; display: flex; flex-direction: column; }
+        .border-right-box { flex: 1; }
+        .border-right-box:not(:last-child) { border-bottom: 4px solid black; }
+        .border-bottom { grid-column: 1 / 2; grid-row: 2 / 3; border-top: 4px solid black; display: flex; }
+        .border-bottom-box { flex: 1; }
+        .border-bottom-box:not(:last-child) { border-right: 4px solid black; }
+        .border-corner { grid-column: 2 / 3; grid-row: 2 / 3; background-color: white; border-left: 4px solid black; border-top: 4px solid black; }
     </style>
 </head>
 <body>
 
     <nav class="top-nav">
-        <div class="nav-empty"></div>
-        
+        <a href="index.html" class="nav-empty">
+            <img src="static/logo.png" alt="Startseite" class="logo-img">
+        </a>
         <div class="nav-links" id="nav-links">
-            <a href="box.html" class="nav-link">Die Box</a>
-            <a href="wissen.html" class="nav-link2">Wissen</a>
-            <a href="material.html" class="nav-link3">Material</a>
-            <a href="workshops.html" class="nav-link4">Workshops</a>
-            <a href="partner.html" class="nav-link2">Partner</a>
+            <a href="box.html" class="nav-link_box">Das Konzept</a>
+            <a href="material.html" class="nav-link_mat">Die Materialien</a>
+            <a href="workshops.html" class="nav-link_wosh">Die Workshops</a>
+            <a href="projekt.html" class="nav-link_proj">Über das Projekt</a>
         </div>
-
         <div class="burger-menu" id="burger-menu">
-            <div class="line line1"></div>
-            <div class="line line2"></div>
-            <div class="line line3"></div>
+            <div class="line line1"></div><div class="line line2"></div><div class="line line3"></div>
         </div>
     </nav>
 
     <div class="main-container">
         <aside class="sidebar">
-            <div class="sidebar-box"></div>
-            <div class="sidebar-box"></div>
-            <div class="sidebar-box"></div>
-            <div class="sidebar-box"></div>
+            <div class="sidebar-box"></div><div class="sidebar-box"></div><div class="sidebar-box"></div><div class="sidebar-box"></div>
         </aside>
 
-        <main class="content-grid">
-            
-            <a href="retro_1.html" class="grid-item">
-                <div class="project-box">
-                    <div class="inner-content">
-                        <img src="RetroPi.jpg" alt="RetroPie">
-                    </div>
-                    <div class="border-right">
-                        <div class="border-right-box"></div>
-                        <div class="border-right-box"></div>
-                        <div class="border-right-box"></div>
-                        <div class="border-right-box"></div>
-                        <div class="border-right-box"></div>
-                    </div>
-                    <div class="border-bottom">
-                        <div class="border-bottom-box"></div>
-                        <div class="border-bottom-box"></div>
-                        <div class="border-bottom-box"></div>
-                        <div class="border-bottom-box"></div>
-                        <div class="border-bottom-box"></div>
-                    </div>
-                    <div class="border-corner"></div>
-                </div>
-            </a>
-
-            <a href="retro_2.html" class="grid-item">
-                <div class="project-box">
-                    <div class="inner-content">
-                        <img src="RetroPi.jpg" alt="RetroPie">
-                    </div>
-                    <div class="border-right">
-                        <div class="border-right-box"></div>
-                        <div class="border-right-box"></div>
-                        <div class="border-right-box"></div>
-                        <div class="border-right-box"></div>
-                        <div class="border-right-box"></div>
-                    </div>
-                    <div class="border-bottom">
-                        <div class="border-bottom-box"></div>
-                        <div class="border-bottom-box"></div>
-                        <div class="border-bottom-box"></div>
-                        <div class="border-bottom-box"></div>
-                        <div class="border-bottom-box"></div>
-                    </div>
-                    <div class="border-corner"></div>
-                </div>
-            </a>
-            
-            <a href="retro_2.html" class="grid-item">
-                <div class="project-box">
-                    <div class="inner-content">
-                        <img src="RetroPi.jpg" alt="RetroPie">
-                    </div>
-                    <div class="border-right">
-                        <div class="border-right-box"></div>
-                        <div class="border-right-box"></div>
-                        <div class="border-right-box"></div>
-                        <div class="border-right-box"></div>
-                        <div class="border-right-box"></div>
-                    </div>
-                    <div class="border-bottom">
-                        <div class="border-bottom-box"></div>
-                        <div class="border-bottom-box"></div>
-                        <div class="border-bottom-box"></div>
-                        <div class="border-bottom-box"></div>
-                        <div class="border-bottom-box"></div>
-                    </div>
-                    <div class="border-corner"></div>
-                </div>
-            </a>
-            
+        <main class="content-grid" id="workshop-grid">
+            <p>Lade Workshops...</p>
         </main>
     </div>
 
     <script>
+        // 1. Burger Menu
         const burgerMenu = document.getElementById('burger-menu');
         const navLinks = document.getElementById('nav-links');
+        burgerMenu.addEventListener('click', () => navLinks.classList.toggle('active'));
 
-        burgerMenu.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        });
+        // 2. Workshops dynamisch laden
+        fetch('workshops.json')
+            .then(response => response.json())
+            .then(workshops => {
+                const grid = document.getElementById('workshop-grid');
+                grid.innerHTML = ''; // Lade-Text entfernen
+
+                workshops.forEach(ws => {
+                    // Generiert den Pfad zum Bild (z.B. Workshops/Arcade_Automat/image.jpg)
+                    const imagePath = `Workshops/${ws.ordner}/${ws.bild}`;
+                    // Verlinkt auf die Template-Seite und übergibt den Ordnernamen in der URL
+                    const linkUrl = `workshop-template.html?id=${ws.ordner}`;
+
+                    const boxHTML = `
+                        <a href="${linkUrl}" class="grid-item">
+                            <div class="project-box">
+                                <div class="inner-content">
+                                    <img src="${imagePath}" alt="${ws.titel}">
+                                </div>
+                                <div class="border-right">
+                                    <div class="border-right-box"></div><div class="border-right-box"></div><div class="border-right-box"></div><div class="border-right-box"></div><div class="border-right-box"></div>
+                                </div>
+                                <div class="border-bottom">
+                                    <div class="border-bottom-box"></div><div class="border-bottom-box"></div><div class="border-bottom-box"></div><div class="border-bottom-box"></div><div class="border-bottom-box"></div>
+                                </div>
+                                <div class="border-corner"></div>
+                            </div>
+                        </a>
+                    `;
+                    grid.innerHTML += boxHTML;
+                });
+            })
+            .catch(error => {
+                document.getElementById('workshop-grid').innerHTML = '<p>Workshops konnten nicht geladen werden.</p>';
+                console.error(error);
+            });
     </script>
 </body>
 </html>

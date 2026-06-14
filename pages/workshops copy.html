@@ -4,131 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Offene Bildungsbox</title>
+    <link rel="stylesheet" href="style.css">
     <style>
-        /* Grundlegendes Styling */
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: 'Comic Sans MS', 'Chalkboard SE', sans-serif;
-        }
+        /* --- Farbliche Markiering Menü ---*/
+        .nav-link_wosh {background-color: #6b85c3;}
 
-        body {
-            background-color: #ffffff;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-
-        /* --- Menüleiste --- */
-        .top-nav {
-            display: flex;
-            border-bottom: 4px solid black;
-            background-color: white;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            align-items: center;
-            height: 60px; /* Feste Höhe: Identisch mit der Breite der Sidebar */
-        }
-
-        .nav-empty {
-            width: 60px; /* Identisch mit der Breite der Sidebar */
-            height: 100%;
-            border-right: 4px solid black;
-            flex-shrink: 0;
-        }
-
-        /* Container für die Links */
-        .nav-links {
-            display: flex;
-            flex: 1;
-            height: 100%;
-        }
-
-        .nav-link, .nav_link_mat, .nav-link3, .nav-link4, .nav-link5 {
-            flex: 1;
-            display: flex;
-            align-items: center;     /* Zentriert den Text vertikal */
-            justify-content: center; /* Zentriert den Text horizontal */
-            text-decoration: none;
-            color: black;
-            font-weight: bold;
-            font-size: 1.2rem;
-            border-right: 4px solid black;
-            transition: background-color 0.3s, color 0.3s;
-            min-width: 120px;
-            height: 100%; /* Füllt die komplette Höhe der Headerleiste aus */
-        }
-
-        /* Entfernt den rechten Rand beim letzten Link */
-        .nav-links a:last-child {
-            border-right: none;
-        }
-
-        .nav-link:hover { background-color: #f3cbe1; color: #000; }
-        .nav_link_mat:hover { background-color: #3aaf71; color: #000; }
-        .nav-link3:hover { background-color: #6b85c3; color: #000; }
-        .nav-link4:hover { background-color: #edce76; color: #000; }
-        .nav-link5:hover { background-color: #278807; color: #000; }
-
-        /* --- Burger Menü Icon --- */
-        .burger-menu {
-            display: none;
-            flex-direction: column;
-            justify-content: space-between;
-            width: 35px;
-            height: 25px;
-            cursor: pointer;
-            margin: 0 20px;
-            margin-left: auto;
-        }
-
-        .burger-menu .line {
-            width: 100%;
-            height: 5px;
-            border-radius: 3px;
-            border: 1px solid black;
-        }
-
-        .burger-menu .line1 { background-color: #f3cbe1; } 
-        .burger-menu .line2 { background-color: #3aaf71; } 
-        .burger-menu .line3 { background-color: #6b85c3; } 
-
-        /* --- Responsive Ansicht (Mobile / Tablets) --- */
-        @media (max-width: 768px) {
-            .nav-links {
-                display: none;
-                flex-direction: column;
-                position: absolute;
-                top: 100%; /* Klappt exakt unter den 60px hohen Header auf */
-                left: 0;
-                width: 100%;
-                background-color: white;
-                border-bottom: 4px solid black;
-                height: auto; /* Hebt die 100% Höhe für die mobile Liste auf */
-            }
-
-            .nav-links.active {
-                display: flex;
-            }
-
-            .nav-link, .nav_link_mat, .nav-link3, .nav-link4, .nav-link5 {
-                border-right: none;
-                border-bottom: 2px solid black;
-                width: 100%;
-                height: 55px; /* Angenehme Klick-Höhe auf dem Smartphone */
-            }
-
-            .nav-links a:last-child {
-                border-bottom: none;
-            }
-
-            .burger-menu {
-                display: flex;
-            }
-        }
-        
         /* --- Hauptbereich --- */
         .main-container {
             display: flex;
@@ -239,12 +119,14 @@
 <body>
 
     <nav class="top-nav">
-        <div class="nav-empty"></div>
+        <a href="box.html" class="nav-empty">
+        <img src="static/logo.png" alt="Startseite" class="logo-img">
+        </a>
         
-        <div class="nav-links" id="nav-links">
+         <div class="nav-links" id="nav-links">
             <a href="box.html" class="nav-link_box">Das Konzept</a>
             <a href="material.html" class="nav-link_mat">Die Materialien</a>
-            <a href="workshops.html" class="nav-link_WoSh">Die Workshops</a>
+            <a href="workshops.html" class="nav-link_wosh">Die Workshops</a>
             <a href="projekt.html" class="nav-link_proj">Über das Projekt</a>
         </div>
 
@@ -314,7 +196,7 @@
             <a href="retro_2.html" class="grid-item">
                 <div class="project-box">
                     <div class="inner-content">
-                        <img src="https://via.placeholder.com/400x300/d9d9d9/808080?text=Arcade+Bild" alt="RetroPie">
+                        <img src="RetroPi.jpg" alt="RetroPie">
                     </div>
                     <div class="border-right">
                         <div class="border-right-box"></div>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offene Bildungsbox - Workshop Detail</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+    <style>
+        .nav-link_wosh { background-color: #6b85c3; }
+        .main-container { display: flex; flex: 1; }
+        .sidebar { width: 60px; border-right: 4px solid black; display: flex; flex-direction: column; flex-shrink: 0; }
+        .sidebar-box { height: 150px; border-bottom: 4px solid black; }
+        
+        .content-area { flex: 1; padding: 40px; max-width: 900px; line-height: 1.6; }
+        .content-area h1 { margin-bottom: 20px; font-size: 2.5rem; }
+        .content-area h2 { margin-top: 30px; margin-bottom: 15px; }
+        .content-area p { margin-bottom: 20px; font-size: 1.1rem; }
+        .content-area img { max-width: 100%; height: auto; border: 4px solid black; margin-bottom: 20px; }
+    </style>
+</head>
+<body>
+
+    <nav class="top-nav">
+        <a href="index.html" class="nav-empty">
+            <img src="static/logo.png" alt="Startseite" class="logo-img">
+        </a>
+        <div class="nav-links" id="nav-links">
+            <a href="box.html" class="nav-link_box">Das Konzept</a>
+            <a href="material.html" class="nav-link_mat">Die Materialien</a>
+            <a href="workshops.html" class="nav-link_wosh">Die Workshops</a>
+            <a href="projekt.html" class="nav-link_proj">Über das Projekt</a>
+        </div>
+        <div class="burger-menu" id="burger-menu">
+            <div class="line line1"></div><div class="line line2"></div><div class="line line3"></div>
+        </div>
+    </nav>
+
+    <div class="main-container">
+        <aside class="sidebar">
+            <div class="sidebar-box"></div><div class="sidebar-box"></div><div class="sidebar-box"></div><div class="sidebar-box"></div>
+        </aside>
+
+        <main class="content-area" id="markdown-content">
+            <p>Lade Workshop-Inhalte...</p>
+        </main>
+    </div>
+
+    <script>
+        const burgerMenu = document.getElementById('burger-menu');
+        const navLinks = document.getElementById('nav-links');
+        burgerMenu.addEventListener('click', () => navLinks.classList.toggle('active'));
+
+        // URL auslesen, um zu wissen, welcher Workshop geklickt wurde
+        const urlParams = new URLSearchParams(window.location.search);
+        const workshopId = urlParams.get('id');
+
+        if (workshopId) {
+            // Wir nehmen an, dass die Markdown-Datei genau so heißt wie der Ordner (z.B. Arcade_Automat.md)
+            const mdPfad = `Workshops/${workshopId}/${workshopId}.md`;
+
+            fetch(mdPfad)
+                .then(response => {
+                    if (!response.ok) throw new Error('Markdown nicht gefunden');
+                    return response.text();
+                })
+                .then(text => {
+                    document.getElementById('markdown-content').innerHTML = marked.parse(text);
+                })
+                .catch(error => {
+                    document.getElementById('markdown-content').innerHTML = `<h2>Fehler</h2><p>Die Inhalte für diesen Workshop (${workshopId}) konnten leider nicht geladen werden.</p>`;
+                });
+        } else {
+            document.getElementById('markdown-content').innerHTML = '<p>Kein Workshop ausgewählt. Gehe zurück zur Übersicht.</p>';
+        }
+    </script>
+</body>
+</html>
