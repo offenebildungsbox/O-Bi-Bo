@@ -23,20 +23,7 @@
 </head>
 <body>
 
-    <nav class="top-nav">
-        <a href="index.html" class="nav-empty">
-            <img src="static/logo.png" alt="Startseite" class="logo-img">
-        </a>
-        <div class="nav-links" id="nav-links">
-            <a href="box.html" class="nav-link_box">Das Konzept</a>
-            <a href="material.html" class="nav-link_mat">Die Materialien</a>
-            <a href="workshops.html" class="nav-link_wosh">Die Workshops</a>
-            <a href="projekt.html" class="nav-link_proj">Über das Projekt</a>
-        </div>
-        <div class="burger-menu" id="burger-menu">
-            <div class="line line1"></div><div class="line line2"></div><div class="line line3"></div>
-        </div>
-    </nav>
+    <div id="menu-container"></div>
 
     <div class="main-container">
         <aside class="sidebar">
@@ -49,11 +36,23 @@
     </div>
 
     <script>
-        const burgerMenu = document.getElementById('burger-menu');
-        const navLinks = document.getElementById('nav-links');
-        burgerMenu.addEventListener('click', () => navLinks.classList.toggle('active'));
+        // --- 1. Lade das Menü ---
+        fetch('menu.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('menu-container').innerHTML = data;
 
-        // URL auslesen, um zu wissen, welcher Workshop geklickt wurde
+                // Aktiviere das Burger-Menü
+                const burgerMenu = document.getElementById('burger-menu');
+                const navLinks = document.getElementById('nav-links');
+                if (burgerMenu && navLinks) {
+                    burgerMenu.addEventListener('click', () => navLinks.classList.toggle('active'));
+                }
+            })
+            .catch(error => console.error('Fehler beim Laden des Menüs:', error));
+
+
+        // --- 2. Lade Workshop-Inhalt basierend auf URL ---
         const urlParams = new URLSearchParams(window.location.search);
         const workshopId = urlParams.get('id');
 

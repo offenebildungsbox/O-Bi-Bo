@@ -8,10 +8,9 @@
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 
     <link rel="stylesheet" href="style.css">
-    
     <style>
-    .nav-link_mat {
-            background-color: #3aaf71;
+    .nav-link_proj {
+            background-color: #edce76;
         }
     </style>
 </head>
@@ -31,6 +30,7 @@
             Lade Inhalte...
         </main>
     </div>
+
 
     <script>
         // --- 1. Lade das Menü ---
@@ -53,8 +53,7 @@
             .catch(error => console.error('Fehler beim Laden des Menüs:', error));
 
         // --- 2. Markdown Datei laden und rendern ---
-        // WICHTIG: Ersetze 'ordnername/box.md' mit dem tatsächlichen Pfad zu deiner Markdown-Datei
-        const markdownFilePath = 'material.md'; 
+        const markdownFilePath = 'static_content/project.md'; 
 
         fetch(markdownFilePath)
             .then(response => {
