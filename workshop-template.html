@@ -58,7 +58,7 @@
 
         if (workshopId) {
             // Wir nehmen an, dass die Markdown-Datei genau so heißt wie der Ordner (z.B. Arcade_Automat.md)
-            const mdPfad = `Workshops/${workshopId}/${workshopId}.md`;
+            const mdPfad = `workshops/${workshopId}/${workshopId}.md`;
 
             fetch(mdPfad)
                 .then(response => {
