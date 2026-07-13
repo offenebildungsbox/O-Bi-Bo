@@ -6,6 +6,6 @@ Die Offene Bildungsbox (O-Bi-Bo) ist ein Workshop-Austausch-Format, das die Erst
 - Mit den [Erklärkärtchen](https://github.com/offenebildungsbox/O-Bi-Bo/tree/main/Pagecontent_Management/Material) werden Elemente aus der Bildungs-Box kurz und knapp erklärt. So können die Teilnehmenden in Workshops einfacher tüfteln und sich Dinge selber beibringen.
 - In der [Ressourcensammlung](https://github.com/offenebildungsbox/O-Bi-Bo/tree/main/Pagecontent_Management/Material) haben wir interessante und hilfreiche Webseiten zusammengestellt. Von CAD über Programmieren bis hin zu Häkeln könnt ihr hier Inspiration für euren nächsten Workshop finden. Auch für offene Angebote kann diese als erster Startpunkt der Teilnehmenden genutzt werden.
 - [Templates](https://github.com/offenebildungsbox/O-Bi-Bo/tree/main/Pagecontent_Management/Material) für Anleitungen und neue Erklärkärtchen stehen bereit und verpassen euren Workshops ein einheitliches Auftreten.
-- Der [Beipackzettel](https://github.com/offenebildungsbox/O-Bi-Bo/tree/main/Pagecontent_Management/Material) bildet unsere genutzte wissenschaftliche Grundlage für das Studienprojekt.
+- Der [Beipackzettel](Pagecontent_Management/Material/Beipackzettel_V1.pdf) bildet unsere genutzte wissenschaftliche Grundlage für das Studienprojekt.
 
 Alle Inhalte die wir zur Verfügung stellen sollen für euren eigenen Einsatzzweck genutzt und vor allem ergänzt, geteilt und abgeändert werden.
