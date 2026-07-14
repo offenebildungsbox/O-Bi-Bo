@@ -2,7 +2,7 @@
 
 ## Willkommen in der *Offenen Bildungsbox*!
 
-Hier findest du ein *workshop-austausch-format* und Unterlagen, die dir helfen sollen Workshops für Kinder und Jugendliche im MINKT-Bereich zu erstellen und durchzuführen.
+Hier findest du ein *workshop-austausch-format* und Unterlagen, die dir helfen sollen MINKT-Workshops für Kinder und Jugendliche zu erstellen und durchzuführen.
 Mit der Bildungs-Box, die aus Bauteilen und Werkzeugen besteht, lassen sich verschiedene Workshops einfacher durchführen.
 Mit den Erklärkärtchen werden die Elemente in der Bildungs-Box kurz und knapp erklärt. So können die Teilnehmenden in Workshops einfacher tüfteln und sich Dinge selber beibringen.
 
