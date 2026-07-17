@@ -18,8 +18,10 @@
 
 ### III. Templates Erklärkärtchen
 1.) Das Template für neue Erklärkärtchen findest du [hier](/Material/Vorlage_Erklärkärtchen.af).
+
 2.) Achte auf die korrekte Farbcodierung beim Erstellen der neuen Erklärkärtchen. 
 
 ### IV. Erklärkärtchen hochladen
 1.) Füge den vor dir erstellten Druckbogen unter [Erklärkärtchen](/Material/Erklärkärtchen) hinzu.
+
 2.) Erstelle einen Pull Request. Wenn alles passt, werden die neuen Erklärkärtchen von unseren Ehrenamtlichen in das Repository gemergt.
