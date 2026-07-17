@@ -1,1 +1,3 @@
 ### Hier könnte dein Workshop stehen...
+
+Lorem Ipsum
