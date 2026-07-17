@@ -16,8 +16,8 @@ Um selber Anleitungen und Kärtchen zu erstellen findest du hier die entsprechen
 Unter [Die Workshops](https://github.com/offenebildungsbox/O-Bi-Bo/tree/main/Pagecontent_Management/Workshops) sind schon ausgearbeitete Workshops hinterlegt. Nutze diese Workshops gerne in deiner Einreichtung.
 
 **Kann ich einen Workshop oder Erklärkärtchen beitragen?**
-Die Offene Bildungsbox lebt davon, dass Workshops für die Bildungs-Box erstellt werden oder dafür adaptiert werden. Wir freuen uns sehr wenn du deinen Workshop zu Verfügung stellen willst. [Hier](https://offenebildungsbox.github.io/O-Bi-Bo/index.html) -> CONTRIBUTERS GUIDE findest du die Anleitung zum Hochladen deines Workshops auf github, sowie die benötigten Rahmenbedingungen.
-Wenn du neue Erklärkärtchen erstellen möchtest freuen wir uns auch sehr darüber. Bitte benutze das entsprechende Template und und lies dir [hier](https://offenebildungsbox.github.io/O-Bi-Bo/index.html) -> CONTRIBUTERS GUIDE durch was zu beachtent ist, und wie du diese teilen kannst.
+Die Offene Bildungsbox lebt davon, dass Workshops für die Bildungs-Box erstellt werden oder dafür adaptiert werden. Wir freuen uns sehr wenn du deinen Workshop zu Verfügung stellen willst. [Hier](https://offenebildungsbox.github.io/O-Bi-Bo/index.html) -> CONTRIBUTERS GUIDE findest du die Anleitung zum Hochladen deines Workshops auf GitHub, sowie die benötigten Rahmenbedingungen.
+Wenn du neue Erklärkärtchen erstellen möchtest freuen wir uns auch sehr darüber. Bitte benutze das entsprechende Template und und lies dir [hier](https://offenebildungsbox.github.io/O-Bi-Bo/index.html) -> CONTRIBUTERS GUIDE wie du diese teilen kannst.
 
 **Wie kann ich mich anderweitig in das Projekt einbringen?**
 Melde dich hier zu gerne bei der Ansprechsperson unter [Über das Projekt](https://github.com/offenebildungsbox/O-Bi-Bo/blob/main/Pagecontent_Management/UeberDasProjekt.md).
