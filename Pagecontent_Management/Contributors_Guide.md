@@ -9,17 +9,17 @@
 
 5.) Erstelle einen Pull Request. Wenn alles passt, wird der Workshop von unseren Ehrenamtlichen in das Repository gemergt.
 
+
 ### II. Rahmenbedingungen Workshop-Erstellung
 1.) Unser [Leitfaden zur Workshop-Erstellung](/Material/Leitfaden-Workshop-Erstellung_V1.pdf) hilft dir bei der Erstellung von Workshops weiter.
 
 2.) Benutze zum Erstellen von Anleitungen für Teilnehmende dieses [Template](/Material/Vorlage_Teilnehmenden_Anleitung.af). Für die Handreichung für die Mentor:innen steht diese [Vorlage](/Material/Vorlage_Mentorinnen_Anleitung.af) zur Verfügung. 
 
-3.) 
-
 
 ### III. Templates Erklärkärtchen
-Das Template für neue Erklärkärtchen findest du [hier] -> TEMPLATES ERKLÄRKÄRTCHEN
-
+1.) Das Template für neue Erklärkärtchen findest du [hier](/Material/Vorlage_Erklärkärtchen.af).
+2.) Achte auf die korrekte Farbcodierung beim Erstellen der neuen Erklärkärtchen. 
 
 ### IV. Erklärkärtchen hochladen
-1.)
+1.) Füge den vor dir erstellten Druckbogen unter [Erklärkärtchen](/Material/Erklärkärtchen) hinzu.
+2.) Erstelle einen Pull Request. Wenn alles passt, werden die neuen Erklärkärtchen von unseren Ehrenamtlichen in das Repository gemergt.
