@@ -13,16 +13,16 @@ Unter [Die Materialien](https://github.com/offenebildungsbox/O-Bi-Bo/blob/main/P
 Um selber Anleitungen und Kärtchen zu erstellen findest du hier die entsprechenden *Templates*. Außerdem ist hier eine wissenschaftliche Grundlage abgelegt, der *Beipackzettel*. Dieser ist im Rahmen unserer Projektdokumentation entstanden und keine leichte Lektüre!
 
 **Die Workshops:**
-Unter [Die Workshops](https://github.com/offenebildungsbox/O-Bi-Bo/tree/main/Pagecontent_Management/Workshops) sind schon ausgearbeitete Workshops hinterlegt. Nutze diese Workshops gerne in deiner Einreichtung.
+Unter [Die Workshops](https://github.com/offenebildungsbox/O-Bi-Bo/tree/main/Pagecontent_Management/Workshops) sind schon ausgearbeitete Workshops hinterlegt. Nutze diese Workshops gerne in deiner Einrichtung.
 
 **Kann ich einen Workshop oder Erklärkärtchen beitragen?**
-Die Offene Bildungsbox lebt davon, dass Workshops für die Bildungs-Box erstellt werden oder dafür adaptiert werden. Wir freuen uns sehr wenn du deinen Workshop zu Verfügung stellen willst. [Hier](/Pagecontent_Management/Contributors_Guide.md) findest du die Anleitung zum Hochladen deines Workshops auf GitHub, sowie die benötigten Rahmenbedingungen.
-Wenn du neue Erklärkärtchen erstellen möchtest freuen wir uns auch sehr darüber. Bitte benutze das entsprechende Template und und lies dir [hier](/Pagecontent_Management/Contributors_Guide.md) wie du diese teilen kannst.
+Die Offene Bildungsbox lebt davon, dass Workshops für die Bildungs-Box erstellt werden oder dafür adaptiert werden. Wir freuen uns sehr wenn du deinen Workshop zur Verfügung stellen willst. [Hier](/Pagecontent_Management/Contributors_Guide.md) findest du die Anleitung zum Hochladen deines Workshops auf GitHub, sowie die benötigten Rahmenbedingungen.
+Wenn du neue Erklärkärtchen erstellen möchtest, freuen wir uns auch sehr darüber. Bitte benutze das entsprechende Template und lies dir [hier](/Pagecontent_Management/Contributors_Guide.md) durch, wie du diese auf dem GitHub für andere bereitstellen kannst.
 
 **Wie kann ich mich anderweitig in das Projekt einbringen?**
-Melde dich hier zu gerne bei der Ansprechsperson unter [Über das Projekt](https://github.com/offenebildungsbox/O-Bi-Bo/blob/main/Pagecontent_Management/UeberDasProjekt.md).
+Melde dich hierzu gerne bei der Ansprechsperson unter [Über das Projekt](https://github.com/offenebildungsbox/O-Bi-Bo/blob/main/Pagecontent_Management/UeberDasProjekt.md).
 
 **Ich hab eine Idee, wo kann ich diese teilen?**
-Melde dich hier zu gerne bei der Ansprechsperson unter [Über das Projekt](https://github.com/offenebildungsbox/O-Bi-Bo/blob/main/Pagecontent_Management/UeberDasProjekt.md).
+Melde dich auch hierzu gerne bei der Ansprechsperson unter [Über das Projekt](https://github.com/offenebildungsbox/O-Bi-Bo/blob/main/Pagecontent_Management/UeberDasProjekt.md).
 
 
