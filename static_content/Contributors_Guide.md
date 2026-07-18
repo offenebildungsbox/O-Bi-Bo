@@ -13,9 +13,9 @@
 
 
 ### II. Rahmenbedingungen Workshop-Erstellung
-1.) Unser [Leitfaden zur Workshop-Erstellung](/Pagecontent_Management/Material/Leitfaden-Workshop-Erstellung_V1.pdf) hilft dir bei der Erstellung von Workshops weiter.
+1.) Unser [Leitfaden zur Workshop-Erstellung](https://github.com/offenebildungsbox/O-Bi-Bo/blob/main/Pagecontent_Management/Material/Leitfaden-Workshop-Erstellung_V1.pdf) hilft dir bei der Erstellung von Workshops weiter.
 
-2.) Benutze zum Erstellen von Anleitungen für Teilnehmende dieses [Template](/Pagecontent_Management/Material/Vorlage_Teilnehmenden_Anleitung.af). Für die Handreichung für die Mentor:innen steht diese [Vorlage](/Pagecontent_Management/Material/Vorlage_Mentorinnen_Anleitung.af) zur Verfügung. 
+2.) Benutze zum Erstellen von Anleitungen für Teilnehmende dieses [Template](). Für die Handreichung für die Mentor:innen steht diese [Vorlage](/Pagecontent_Management/Material/Vorlage_Mentorinnen_Anleitung.af) zur Verfügung. 
 
 
 ### III. Templates Erklärkärtchen
