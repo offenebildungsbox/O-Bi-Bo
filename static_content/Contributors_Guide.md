@@ -27,3 +27,6 @@
 1.) Füge den vor dir erstellten Druckbogen unter [Erklärkärtchen](/Pagecontent_Management/Material/Erklärkärtchen) hinzu.
 
 2.) Erstelle einen Pull Request. Wenn alles passt, werden die neuen Erklärkärtchen von unseren Ehrenamtlichen in das Repository gemergt.
+
+
+IN EDIT
