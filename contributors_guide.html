@@ -8,10 +8,10 @@
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 
     <link rel="stylesheet" href="style.css">
-
+    
     <style>
-    .nav-link_box {
-            background-color: #f3cbe1;
+    .nav-link_contr {
+            background-color: #3aaf71;
         }
     </style>
 </head>
@@ -33,7 +33,6 @@
     </div>
 
     <script>
-
         // --- 1. Lade das Menü ---
         fetch('menu.html')
             .then(response => response.text())
@@ -55,7 +54,7 @@
 
         // --- 2. Markdown Datei laden und rendern ---
         // WICHTIG: Ersetze 'ordnername/box.md' mit dem tatsächlichen Pfad zu deiner Markdown-Datei
-        const markdownFilePath = 'Konzept.md';
+        const markdownFilePath = 'static_content/Contributors_Guide.md'; 
 
         fetch(markdownFilePath)
             .then(response => {

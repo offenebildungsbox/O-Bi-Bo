@@ -1,15 +1,13 @@
 ### I. Workshop hochladen
-1.) Erstelle einen neuen Ordner mit deinem Workshopnamen in diesem Order: [/static_content/workshops](/static_content/workshops)
+1.) Erstelle einen neuen Ordner mit deinem Workshopnamen in diesem Order: [/Pagecontent_Management/Workshops](/Pagecontent_Management/Workshops)
 
-2.) Erstelle in deinem neuen Ordner eine Markdown Datei mit dem selben Namen wie dein Ordner (Workshop_Name.md), in welcher du die Elemente deines Workshops kurz beschreibst.
+2.) Erstelle in deinem neuen Ordner eine README.md Datei, in welcher du die Elemente deines Workshops kurz beschreibst.
 
-3.) In dem [/static_content/workshops](/static_content/workshops) Ordner gibt es eine workshops.json Datei. Trage deinen Workshop hier ein das er auf der Seite gelistet wird.
+3.) Lade in deinem Ordner die Workshop-Unterlagen hoch, wie beispielsweise eine Handreichung für Mentor:innen oder Anleitungen für Teilnehmende. 
 
-4.) Lade in deinem Ordner die Workshop-Unterlagen hoch, wie beispielsweise eine Handreichung für Mentor:innen oder Anleitungen für Teilnehmende. 
+4.) Benenne diese Unterlagen aussagekräftig und verlinke sie über Hyperlinks in deinem README.md. In GitHub geht das wie folgt: [Name-Hyperlink] und direkt anschließend (Pfad-zur-Datei/Dateiname).
 
-5.) Benenne diese Unterlagen aussagekräftig und verlinke sie über Hyperlinks in deinem README.md. In GitHub geht das wie folgt: [Name-Hyperlink] und direkt anschließend (Pfad-zur-Datei/Dateiname).
-
-6.) Erstelle einen Pull Request. Wenn alles passt, wird der Workshop von unseren Ehrenamtlichen in das Repository gemergt.
+5.) Erstelle einen Pull Request. Wenn alles passt, wird der Workshop von unseren Ehrenamtlichen in das Repository gemergt.
 
 
 ### II. Rahmenbedingungen Workshop-Erstellung
