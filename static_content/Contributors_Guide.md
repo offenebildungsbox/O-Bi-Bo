@@ -1,9 +1,9 @@
 ### I. Workshop hochladen
-1.) Erstelle einen neuen Ordner mit deinem Workshopnamen in diesem Order: [/static_content/workshops](/static_content/workshops)
+1.) Erstelle einen neuen Ordner mit deinem Workshopnamen in diesem Order: [/static_content/workshops](https://github.com/offenebildungsbox/O-Bi-Bo/tree/main/workshops)
 
 2.) Erstelle in deinem neuen Ordner eine Markdown Datei mit dem selben Namen wie dein Ordner (Workshop_Name.md), in welcher du die Elemente deines Workshops kurz beschreibst.
 
-3.) In dem [/static_content/workshops](/static_content/workshops) Ordner gibt es eine workshops.json Datei. Trage deinen Workshop hier ein das er auf der Seite gelistet wird.
+3.) In dem [/static_content/workshops](https://github.com/offenebildungsbox/O-Bi-Bo/tree/main/workshops) Ordner gibt es eine workshops.json Datei. Trage deinen Workshop hier ein das er auf der Seite gelistet wird.
 
 4.) Lade in deinem Ordner die Workshop-Unterlagen hoch, wie beispielsweise eine Handreichung für Mentor:innen oder Anleitungen für Teilnehmende. 
 
