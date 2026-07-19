@@ -1,3 +1,3 @@
 # workshops
 
-Hier kannst du die Anleitung Runterladen
+Hier kannst du die Anleitungen runterladen
