@@ -1,7 +1,7 @@
 ### I. Workshop hochladen
-1.) Erstelle einen neuen Ordner mit deinem Workshopnamen in diesem Order: [/static_content/workshops](https://github.com/offenebildungsbox/O-Bi-Bo/tree/main/workshops)
+1.) Erstelle einen neuen Ordner mit deinem Workshopnamen (ohne Leerzeichen) in diesem Order: [/static_content/workshops](https://github.com/offenebildungsbox/O-Bi-Bo/tree/main/workshops)
 
-2.) Erstelle in deinem neuen Ordner eine Markdown Datei mit dem selben Namen wie dein Ordner (Workshop_Name.md), in welcher du die Elemente deines Workshops kurz beschreibst.
+2.) Erstelle in deinem neuen Ordner eine Markdown Datei mit dem selben Namen wie dein Ordner (Workshopname.md), in welcher du die Elemente deines Workshops kurz beschreibst.
 
 3.) In dem [/static_content/workshops](https://github.com/offenebildungsbox/O-Bi-Bo/tree/main/workshops) Ordner gibt es eine workshops.json Datei. Trage deinen Workshop hier ein das er auf der Seite gelistet wird.
 
@@ -15,7 +15,7 @@
 ### II. Rahmenbedingungen Workshop-Erstellung
 1.) Unser [Leitfaden zur Workshop-Erstellung](https://github.com/offenebildungsbox/O-Bi-Bo/blob/main/static_content/files/Leitfaden-Workshop-Erstellung_V1.pdf) hilft dir bei der Erstellung von Workshops weiter.
 
-2.) Benutze zum Erstellen von Anleitungen für Teilnehmende dieses [Template](). Für die Handreichung für die Mentor:innen steht diese [Vorlage](https://github.com/offenebildungsbox/O-Bi-Bo/blob/main/static_content/files/Vorlage_Mentorinnen_Anleitung.af) zur Verfügung. 
+2.) Benutze zum Erstellen von Anleitungen für Teilnehmende dieses [Template](https://github.com/offenebildungsbox/O-Bi-Bo/blob/main/static_content/files/Vorlage_Teilnehmenden_Anleitung.af). Für die Handreichung für die Mentor:innen steht diese [Vorlage](https://github.com/offenebildungsbox/O-Bi-Bo/blob/main/static_content/files/Vorlage_Mentorinnen_Anleitung.af) zur Verfügung. 
 
 
 ### III. Templates Erklärkärtchen
