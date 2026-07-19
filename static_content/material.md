@@ -13,7 +13,7 @@
 
 - Mit den [Erklärkärtchen](https://github.com/offenebildungsbox/O-Bi-Bo/blob/main/static_content/files/Erkl%C3%A4rk%C3%A4rtchen/Erkl%C3%A4rk%C3%A4rtchen_Druckbogen_1.pdf) werden Elemente aus der Bildungs-Box kurz und knapp erklärt. So können die Teilnehmenden in Workshops einfacher tüfteln und sich Dinge selber beibringen.
     
-    [![Leitfaden zur Workshop-Durchführung](static_content/images/Vorlage_Erklaerkaertchen.jpg)](https://github.com/offenebildungsbox/O-Bi-Bo/blob/main/static_content/files/Erkl%C3%A4rk%C3%A4rtchen/Erkl%C3%A4rk%C3%A4rtchen_Druckbogen_1.pdf)
+    [![Erklärkärtchen](static_content/images/Vorlage_Erklaerkaertchen.png)](https://github.com/offenebildungsbox/O-Bi-Bo/blob/main/static_content/files/Erkl%C3%A4rk%C3%A4rtchen/Erkl%C3%A4rk%C3%A4rtchen_Druckbogen_1.pdf)
 
 
 - In der [Ressourcensammlung](https://github.com/offenebildungsbox/O-Bi-Bo/blob/main/static_content/files/Ressourcensammlung_V1.pdf) haben wir interessante und hilfreiche Webseiten zusammengestellt. Von CAD über Programmieren bis hin zu Häkeln könnt ihr hier Inspiration für euren nächsten Workshop finden. Auch für offene Angebote kann diese als erster Startpunkt der Teilnehmenden genutzt werden.
