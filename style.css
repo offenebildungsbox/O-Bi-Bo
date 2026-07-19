@@ -162,7 +162,9 @@
         /* Sorgt dafür, dass Bilder aus dem Markdown nicht zu groß werden */
         .content-area img {
             max-width: 100%;
+            max-height: 300px; /* NEU: Maximale Höhe auf 300px begrenzen */
             height: auto;
+            width: auto; /* Stellt sicher, dass die Breite sich anpasst, wenn die Höhe begrenzt wird */
             border: 4px solid black; /* Passt optisch zum Rest der Seite */
             margin-bottom: 20px;
         }

@@ -1,1 +1,3 @@
 ### Hier könnte dein Workshop stehen...
+
+[Hier geht es zum Contributors Guide](https://offenebildungsbox.github.io/O-Bi-Bo/contributors_guide.html)

@@ -5,11 +5,14 @@
 
 3.) In dem [/static_content/workshops](https://github.com/offenebildungsbox/O-Bi-Bo/tree/main/workshops) Ordner gibt es eine workshops.json Datei. Trage deinen Workshop hier ein das er auf der Seite gelistet wird.
 
-4.) Lade in deinem Ordner die Workshop-Unterlagen hoch, wie beispielsweise eine Handreichung für Mentor:innen oder Anleitungen für Teilnehmende. 
+4.) Lade in den Ordner das Titelbild deines Workshops. Es ein Querformat JPG oder PNG mit den Maßen 2000x1500 Pixel sein.
+Der Name des Bilds muss identisch zu deinem Workshopnamen sein.
 
-5.) Benenne diese Unterlagen aussagekräftig und verlinke sie über Hyperlinks in deinem README.md. In GitHub geht das wie folgt: [Name-Hyperlink] und direkt anschließend (Pfad-zur-Datei/Dateiname).
+5.) Lade in deinem Ordner die Workshop-Unterlagen hoch, wie beispielsweise eine Handreichung für Mentor:innen oder Anleitungen für Teilnehmende.
 
-6.) Erstelle einen Pull Request. Wenn alles passt, wird der Workshop von unseren Ehrenamtlichen in das Repository gemergt.
+6.) Benenne diese Unterlagen aussagekräftig und verlinke sie über Hyperlinks in deinem README.md. In GitHub geht das wie folgt: [Name-Hyperlink] und direkt anschließend (Pfad-zur-Datei/Dateiname).
+
+7.) Erstelle einen Pull Request. Wenn alles passt, wird der Workshop von unseren Ehrenamtlichen in das Repository gemergt.
 
 
 ### II. Rahmenbedingungen Workshop-Erstellung
