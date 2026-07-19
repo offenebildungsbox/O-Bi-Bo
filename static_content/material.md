@@ -2,12 +2,12 @@
 
 - Der Leitfaden zur Workshop-Erstellung unterstützt Ehrenamtliche bei der Themenfindung, Ablaufplanung und dabei Material für Mentor:innen  und Teilnehmende vorzubereiten.
     
-    [![Leitfaden zur Workshop-Erstellung](/static_content/images/Leitfaden-Workshop-Durchfuehrung.jpg)](https://github.com/offenebildungsbox/O-Bi-Bo/blob/main/static_content/files/Leitfaden-Workshop-Erstellung_V1.pdf)
+    [![Leitfaden zur Workshop-Erstellung](static_content/images/Leitfaden-Workshop-Durchfuehrung.jpg)](https://github.com/offenebildungsbox/O-Bi-Bo/blob/main/static_content/files/Leitfaden-Workshop-Erstellung_V1.pdf)
 
 
 - Tipps für Mentor:innen wie diese sich auf einen Workshop vorbereiten und die Teilnehmenden begleiten können, finden sich im Leitfaden zur Workshop-Durchführung.
 
-    [![Leitfaden zur Workshop-Durchführung](/static_content/images/Leitfaden-Workshop-Erstellung.jpg)](https://github.com/offenebildungsbox/O-Bi-Bo/blob/main/static_content/files/Leitfaden-Workshop-Durchführung_V1.pdf)
+    [![Leitfaden zur Workshop-Durchführung](static_content/images/Leitfaden-Workshop-Erstellung.jpg)](https://github.com/offenebildungsbox/O-Bi-Bo/blob/main/static_content/files/Leitfaden-Workshop-Durchführung_V1.pdf)
 
 - Durch Standardisierung von Material und Werkzeug soll die [Bildungs-Box](https://github.com/offenebildungsbox/O-Bi-Bo/blob/main/static_content/files/Stückliste-Bildungs-Box_V1.pdf) auch bei der Erstellung, sowie dem Teilen von Workshops helfen. In verschiedenen Makerspaces kann ein mithilfe dieser entwickelter Workshop ohne großen Aufwand umgesetzt werden.
 
@@ -28,5 +28,5 @@ Alle Inhalte die wir zur Verfügung stellen sollen für euren eigenen Einsatzzwe
 
 - Der Beipackzettel bildet unsere genutzte wissenschaftliche Grundlage für das Studienprojekt.
 
-    [![Beipackzettel](/static_content/images/Beipackzettel.jpg)](https://github.com/offenebildungsbox/O-Bi-Bo/blob/main/static_content/files/Beipackzettel_V1.pdf)
+    [![Beipackzettel](static_content/images/Beipackzettel.jpg)](https://github.com/offenebildungsbox/O-Bi-Bo/blob/main/static_content/files/Beipackzettel_V1.pdf)
 
