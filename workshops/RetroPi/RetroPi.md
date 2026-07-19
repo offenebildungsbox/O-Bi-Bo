@@ -1,4 +1,4 @@
-# Retropi
+# Retro-Pi
 
 ### Du hast Lust auf eine Workshop voller Gaming und möchtest trotzdem Sägen, Löten und Elektronik vermitteln?
 Dann ist der Workshop Retro-Pi / Mini Arcade Station vielleicht was für dich!
