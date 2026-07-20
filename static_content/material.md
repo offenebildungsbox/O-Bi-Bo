@@ -11,7 +11,7 @@
 
 - Durch Standardisierung von Material und Werkzeug soll die [Bildungs-Box](https://github.com/offenebildungsbox/O-Bi-Bo/blob/main/static_content/files/Stückliste-Bildungs-Box_V1.pdf) auch bei der Erstellung, sowie dem Teilen von Workshops helfen. In verschiedenen Makerspaces kann ein mithilfe dieser entwickelter Workshop ohne großen Aufwand umgesetzt werden.
 
-- Mit den [Erklärkärtchen](https://github.com/offenebildungsbox/O-Bi-Bo/blob/main/static_content/files/Erkl%C3%A4rk%C3%A4rtchen/Erkl%C3%A4rk%C3%A4rtchen_Druckbogen_1.pdf) werden Elemente aus der Bildungs-Box kurz und knapp erklärt. So können die Teilnehmenden in Workshops einfacher tüfteln und sich Dinge selber beibringen.
+- Mit den Erklärkärtchen werden Elemente aus der Bildungs-Box kurz und knapp erklärt. So können die Teilnehmenden in Workshops einfacher tüfteln und sich Dinge selber beibringen.
     
     [![Erklärkärtchen](static_content/images/Vorlage_Erklaerkaertchen.png)](https://github.com/offenebildungsbox/O-Bi-Bo/blob/main/static_content/files/Erkl%C3%A4rk%C3%A4rtchen/Erkl%C3%A4rk%C3%A4rtchen_Druckbogen_1.pdf)
 
