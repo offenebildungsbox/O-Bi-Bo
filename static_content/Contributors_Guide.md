@@ -5,7 +5,7 @@
 
 3.) In dem [/static_content/workshops](https://github.com/offenebildungsbox/O-Bi-Bo/tree/main/workshops) Ordner gibt es eine workshops.json Datei. Trage deinen Workshop hier ein das er auf der Seite gelistet wird.
 
-4.) Lade in den Ordner das Titelbild deines Workshops. Es ein Querformat JPG oder PNG mit den Maßen 2000x1500 Pixel sein.
+4.) Lade in den Ordner das Titelbild deines Workshops. Es muss ein Querformat JPG oder PNG mit den Maßen 2000x1500 Pixel sein.
 Der Name des Bilds muss identisch zu deinem Workshopnamen sein.
 
 5.) Lade in deinem Ordner die Workshop-Unterlagen hoch, wie beispielsweise eine Handreichung für Mentor:innen oder Anleitungen für Teilnehmende.
@@ -30,6 +30,3 @@ Der Name des Bilds muss identisch zu deinem Workshopnamen sein.
 1.) Füge den vor dir erstellten Druckbogen unter [Erklärkärtchen](https://github.com/offenebildungsbox/O-Bi-Bo/tree/main/static_content/files/Erklärkärtchen) hinzu.
 
 2.) Erstelle einen Pull Request. Wenn alles passt, werden die neuen Erklärkärtchen von unseren Ehrenamtlichen in das Repository gemergt.
-
-
-IN EDIT
